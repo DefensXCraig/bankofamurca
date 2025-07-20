@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bank of Amurica - Online Banking</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header {
+      background-color: rgba(211, 47, 47, 0.85);
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .logo span {
+      color: #fff;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    .search-bar input {
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+    }
+    .main {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
+      gap: 20px;
+      padding: 0 20px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+    .login-section {
+      flex: 2;
+      padding: 25px;
+      border-radius: 8px;
+    }
+    .info-panel {
+      flex: 1;
+      padding: 20px;
+      font-size: 14px;
+    }
+    h2 {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .options {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      font-size: 13px;
+    }
+    .options a {
+      color: #1976d2;
+      text-decoration: none;
+    }
+    .remember {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+    }
+    .remember input {
+      margin-right: 5px;
+    }
+    button {
+      width: 100%;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #155a9e;
+    }
+    .info-panel h3 {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      margin: 40px 0 20px;
+    }
+    footer a {
+      color: #888;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Bank of <span>Amurica</span></div>
+    <div class="nav-links">
+      <a href="#">Personal</a>
+      <a href="#">Business</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="login-section">
+      <h2>Sign In to Online Banking</h2>
+      <form>
+        <label for="userid">User ID</label>
+        <input type="text" id="userid" name="userid" placeholder="Enter your User ID" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your Password" />
+
+        <div class="options">
+          <div class="remember">
+            <input type="checkbox" id="rememberMe" />
+            <label for="rememberMe">Remember me</label>
+          </div>
+          <a href="#">Forgot ID/Password?</a>
+        </div>
+
+        <button type="submit">Log In</button>
+      </form>
+
+      <div style="margin-top: 20px; font-size: 13px;">
+        <a href="#">Enroll Now</a> | <a href="#">Security Center</a>
+      </div>
+    </div>
+
+    <div class="info-panel">
+      <h3>Security Notice</h3>
+      <p>Protect your account by ensuring your password is unique and never shared.</p>
+      <p>Learn more about our <a href="#">Fraud Protection</a> services.</p>
+
+      <h3>Current Offers</h3>
+      <p>Apply now for our Premium Rewards credit card and earn extra cashback.</p>
+    </div>
+  </div>
+
+  <div style="background:#fff3cd; color:#856404; padding:12px 20px; max-width: 1000px; margin: 0 auto 20px auto; border: 1px solid #ffeeba; border-radius: 5px; font-size: 14px; text-align: center; box-shadow: 0 0 5px rgba(0,0,0,0.1);">
+    ⚠️ This is a training website and is non-functional. We do not collect personal information from this website.
+  </div>
+  
+  <footer>
+    &copy; 2025 Bank of Amurica. All rights reserved.<br />
+    <a href="#">Privacy</a> | <a href="#">Security</a> | <a href="#">Terms</a>
+  </footer>
+
+</body>
+</html>
